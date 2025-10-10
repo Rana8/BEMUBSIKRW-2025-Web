@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departemen BEM UBSI Karawang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .department-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/dept.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .department-card {
+            transition: all 0.3s ease;
+        }
+        .department-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-tabs .active {
+            border-bottom: 3px solid #f59e0b;
+            color: #1e40af;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="https://iili.io/KwxpDbe.png" alt="BEM UBSI Karawang" class="h-12">
+                    <img src="https://iili.io/Kwz5FPj.png" alt="Kabinet" class="h-12">
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-yellow-300 font-medium">Beranda</a>
+                    <a href="about.html" class="hover:text-yellow-300 font-medium">Tentang BEM</a>
+                    <a href="departments.html" class="text-yellow-300 font-medium">Departemen</a>
+                    <a href="suara-aman.html" class="hover:text-yellow-300 font-medium">Suara Aman</a>
+                    <a href="media-partner.html" class="hover:text-yellow-300 font-medium">Media Partner</a>
+                    <a href="contact.html" class="hover:text-yellow-300 font-medium">Hubungi Kami</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden py-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 hover:text-yellow-300">Beranda</a>
+                <a href="about.html" class="block py-2 hover:text-yellow-300">Tentang BEM</a>
+                <a href="departments.html" class="block py-2 text-yellow-300">Departemen</a>
+                <a href="suara-aman.html" class="block py-2 hover:text-yellow-300">Suara Aman</a>
+                <a href="media-partner.html" class="block py-2 hover:text-yellow-300">Media Partner</a>
+                <a href="contact.html" class="block py-2 hover:text-yellow-300">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="department-hero text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Departemen BEM UBSI Karawang</h1>
+            <p class="text-xl md:text-2xl mb-8" data-aos="fade-up">Struktur organisasi dan tugas masing-masing departemen</p>
+        </div>
+    </section>
+
+    <!-- Department Navigation -->
+    <section class="py-8 bg-white shadow-sm sticky top-16 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto nav-tabs space-x-6 py-2">
+                <a href="#bph" class="whitespace-nowrap py-2 px-1 active">Badan Pengurus Harian</a>
+                <a href="#agama" class="whitespace-nowrap py-2 px-1">Departemen Agama</a>
+                <a href="#dalam-negeri" class="whitespace-nowrap py-2 px-1">Departemen Dalam Negeri</a>
+                <a href="#minat-bakat" class="whitespace-nowrap py-2 px-1">Departemen Minat & Bakat</a>
+                <a href="#kominfo" class="whitespace-nowrap py-2 px-1">Departemen Kominfo</a>
+                <a href="#sosial-pendidikan" class="whitespace-nowrap py-2 px-1">Departemen Sosial & Pendidikan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Content -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- BPH -->
+            <div id="bph" class="mb-20">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card mb-8" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Badan Pengurus Harian</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Ketua Umum & Wakil Ketua Umum</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bersama-sama menjadi penanggung jawab umum, baik di luar maupun di dalam kampus serta bertindak untuk dan atas nama seluruh Mahasiswa.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Memimpin rapat-rapat BEM dan pertemuan-pertemuan Mahasiswa lainnya.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bersama-sama menangani surat-surat yang masuk dan keluar.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab secara keseluruhan terhadap aktivitas BEM dan memegang kebijaksanaan umum BEM baik kedalam maupun keluar kampus.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Sekretaris Umum</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab atas pelaksanaan rapat.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab bagi pengadaan sarana serta prasarana kesekretariatan lainnya.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Membuat Laporan Kegiatan dan Laporan Pertanggungjawaban Kegiatan BEM.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Menyediakan daftar hadir dan membuat catatan rapat BEM.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mengumpulkan laporan-laporan dari setiap departemen.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Membuat Kalender Proker BEM Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mengarsipkan segala macam surat menyurat.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Bendahara Umum</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bersama Ketua dan Wakil menjalankan kebijaksanaan keuangan.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab atas Administrasi Keuangan BEM.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Membuat Laporan Keuangan BEM secara berkala.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mengumpulkan dan menandatangani bukti-bukti tertulis penerimaan dan pengeluaran KAS maupun dana-dana lain BEM.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Menerima dan menyimpan dana milik BEM.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Memeriksa Laporan Keuangan dari masing-masing departemen, dan membuat Laporan Pertanggungjawaban Keuangan.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Umum</h4>
+                                        <p class="text-gray-700">Reza Maulidin Zikri</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Umum</h4>
+                                        <p class="text-red-700">[ Telah Diberhentikan Secara Tidak Hormat ]</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Sekretaris Umum</h4>
+                                        <p class="text-gray-700">Alyssa Rachmadiptiya</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Sekretaris Umum 1</h4>
+                                        <p class="text-gray-700">Muhammad Risnaldi</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Bendahara Umum</h4>
+                                        <p class="text-gray-700">Ratih Burhana</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Bendahara Umum 1</h4>
+                                        <p class="text-gray-700">Stevani Dorasi Sihombing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departemen Agama -->
+            <div id="agama" class="mb-20">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Departemen Agama</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Tugas dan Fungsi</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mengkoordinir dan melaksanakan kegiatan-kegiatan keagamaan yang di sahkan oleh Negara Republik Indonesia baik di dalam maupun di luar Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bergerak dalam menumbuhkan kerohanian untuk mencapai ketakwaan, keimanan dan akhlak mahasiswa Universitas Bina Sarana Informatika Kampus Kabupaten Karawang melalui kajian-kajian ilmu keagamaan dan kegiatan keagamaan.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Melakukan kegiatan keagamaan yang bertujuan untuk menjaga dan meningkatkan rasa kekeluargaan.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Departemen</h4>
+                                        <p class="text-gray-700">Amanda Alya Fauziyah</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Departemen</h4>
+                                        <p class="text-gray-700">Choerul</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departemen Dalam Negeri -->
+            <div id="dalam-negeri" class="mb-20">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Departemen Dalam Negeri</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Tugas dan Fungsi</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Melaksanakan tugas ketua dan wakil atas dasar penunjukan secara lisan atau tertulis apabila ketua atau wakil berhalangan hadir.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mengorganisir dan mengkoordinir kegiatan operasional divisi SDM BEM dan divisi kesejahteraan mahasiswa dan lebih terfokus ke dalam kampus.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Sumber Daya Manusia BEM lebih berorientasi pada tugas-tugas dan kegiatan dalam organisasi, melakukan kontrol terhadap kinerja Departemen dan melakukan evaluasi.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Kesejahteraan Mahasiswa berorientasi untuk menjalin koordinasi yang sinergi, konsolidasi, kerjasama dan komunikasi dengan civitas yang ada di Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Departemen</h4>
+                                        <p class="text-gray-700">Muhammad Ramadhani</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Departemen</h4>
+                                        <p class="text-gray-700">Cahya Adi Ramadhani</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departemen Minat & Bakat -->
+            <div id="minat-bakat" class="mb-20">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Departemen Minat & Bakat</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Tugas dan Fungsi</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab terhadap segala bentuk pengembangan minat dan bakat mahasiswa Universitas Bina Sarana Informatika Kampus Kabupaten Karawang, khususnya dalam pengembangan potensi mahasiswa dibidang olahraga dan seni budaya.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mewujudkan segala sesuatu yang berhubungan dengan nilai-nilai sportivitas dan kreatifitas mahasiswa, serta mempererat tali kekeluargaan diantara civitas Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Departemen</h4>
+                                        <p class="text-gray-700">Tasya Aulia Pramesty</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Departemen</h4>
+                                        <p class="text-gray-700">Jaya Lesmana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departemen Kominfo -->
+            <div id="kominfo" class="mb-20">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Departemen Komunikasi & Informatika</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Tugas dan Fungsi</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Memfasilitasi mahasiswa untuk mendapatkan berbagai informasi tentang kemahasiswaan dan memberikan wadah bagi pengembangan kreatifitas mahasiswa.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Mempublikasi kegiatan mahasiswa kepada khalayak ramai.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Menyediakan sarana komunikasi atau penyalur aspirasi mahasiswa.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Media Informasi lebih berorientasi untuk mengelola dan menyebarkan informasi baik secara internal maupun eksternal.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Media Komunikasi lebih berorientasi untuk menyalurkan informasi dan mengembangkan relasi dengan pihak internal maupun eksternal, serta menjaga silaturahmi dengan lingkup lembaga.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Departemen</h4>
+                                        <p class="text-gray-700">Rana Putra Ramadhan</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Departemen</h4>
+                                        <p class="text-gray-700">Syaira Khobron Jumadila</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departemen Sosial & Pendidikan -->
+            <div id="sosial-pendidikan">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden department-card" data-aos="fade-up">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h2 class="text-2xl md:text-3xl font-bold">Departemen Sosial & Pendidikan</h2>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Tugas dan Fungsi</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Departemen Sosial dan Pendidikan dibentuk dengan tugas melakukan identifikasi dan responsibility terhadap berbagai persoalan-persoalan sosial dan pendidikan yang berkembang baik di dalam ruang lingkup atau diluar lingkup Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Bertanggung jawab melakukan pengembangan budaya berfikir ilmiah mahasiswa, pengembangan potensi mahasiswa dalam bidang akademik dan juga penguatan pendidikan di Universitas Bina Sarana Informatika Kampus Kabupaten Karawang.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Hubungan Masyarakat lebih berorientasi untuk berkomunikasi dengan publik internal maupun eksternal. Juga berperan sebagai jembatan komunikasi antara organisasi dengan publik.</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i data-feather="check-circle" class="text-blue-600 mr-2 mt-1"></i>
+                                        <span>Divisi Penelitian Dan Pengembangan lebih berorientasi untuk melakukan penelitian dan pengembangan, serta bertanggung jawab atas kegiatan yang dilakukan di lingkup program studi.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6">
+                                <h3 class="text-xl font-bold text-blue-800 mb-4">Struktur Kepengurusan</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Ketua Departemen</h4>
+                                        <p class="text-gray-700">Pitria Patimah</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-700">Wakil Ketua Departemen</h4>
+                                        <p class="text-gray-700">Aprianingtyas Maulidina P</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BEM UBSI Karawang</h3>
+                    <p class="text-gray-400">Kreatif, Inovatif, Responsif, dan Bersinergi untuk membangun mahasiswa yang berintelektual serta berguna bagi bangsa dan negara.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">Tentang BEM</a></li>
+                        <li><a href="departments.html" class="text-gray-400 hover:text-white">Departemen</a></li>
+                        <li><a href="suara-aman.html" class="text-gray-400 hover:text-white">Suara Aman</a></li>
+                        <li><a href="media-partner.html" class="text-gray-400 hover:text-white">Media Partner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i data-feather="mail" class="mr-2"></i> bem.krw@bsi.ac.id</li>
+                        <li class="flex items-center text-gray-400"><i data-feather="phone" class="mr-2"></i> 089525925544</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Media Sosial</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/bem_ubsikarawang" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="https://www.youtube.com/@BEMUBSIKARAWANG" class="text-gray-400 hover:text-white"><i data-feather="youtube"></i></a>
+                        <a href="https://www.tiktok.com/@bem_ubsikarawang" class="text-gray-400 hover:text-white"><i data-feather="video"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 BEM UBSI Karawang - Kabinet Pratipaksha Virya. Dibuat dengan ❤️ oleh Dept.Kominfo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for department navigation
+        document.querySelectorAll('.nav-tabs a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all tabs
+                document.querySelectorAll('.nav-tabs a').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
